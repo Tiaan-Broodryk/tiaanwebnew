@@ -196,24 +196,126 @@ const Home: NextPage = () => {
             <div className="p-7 text-center text-3xl font-extrabold text-indigo-600">
               The Languages I Specialize In
             </div>
-            <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl font-bold text-white shadow-md hover:bg-indigo-400">
-                Typescript.
-              </button>
-              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl  font-bold text-white shadow-md hover:bg-indigo-400">
-                React.
-              </button>
-              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl  font-bold text-white shadow-md hover:bg-indigo-400">
-                Node.
-              </button>
-              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl  font-bold text-white shadow-md hover:bg-indigo-400">
-                HTML.
-              </button>
-              <button className="h-10 w-32 rounded-md bg-indigo-600   text-xl font-bold text-white shadow-md hover:bg-indigo-400">
-                Rust.
-              </button>
-            </div>
           </div>
+
+          <ul
+            role="list"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+              Typescript
+              <div className="flex w-full items-center justify-between space-x-6 p-6">
+                <div className="flex-1 truncate">
+                  <div className="flex items-center space-x-3">
+                    <h3 className="truncate text-sm font-medium text-gray-900"></h3>
+                    <span className="inline-block flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800"></span>
+                  </div>
+                  <p className="mt-1 truncate text-sm text-gray-500">
+                    TypeScript is a typed superset of JavaScript that compiles
+                    to plain JavaScript. It adds optional static typing and
+                    class-based object-oriented programming to the JavaScript
+                    language.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div className="-mt-px flex divide-x divide-gray-200">
+                  <div className="flex w-0 flex-1"></div>
+                  <div className="-ml-px flex w-0 flex-1"></div>
+                </div>
+              </div>
+            </li>
+            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+              React
+              <div className="flex w-full items-center justify-between space-x-6 p-6">
+                <div className="flex-1 truncate">
+                  <div className="flex items-center space-x-3">
+                    <h3 className="truncate text-sm font-medium text-gray-900"></h3>
+                    <span className="inline-block flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800"></span>
+                  </div>
+                  <p className="mt-1 truncate text-sm text-gray-500">
+                    React is a JavaScript library for building user interfaces,
+                    used to create interactive, stateful & reusable UI
+                    components.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div className="-mt-px flex divide-x divide-gray-200">
+                  <div className="flex w-0 flex-1"></div>
+                  <div className="-ml-px flex w-0 flex-1"></div>
+                </div>
+              </div>
+            </li>
+            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+              Node
+              <div className="flex w-full items-center justify-between space-x-6 p-6">
+                <div className="flex-1 truncate">
+                  <div className="flex items-center space-x-3">
+                    <h3 className="truncate text-sm font-medium text-gray-900"></h3>
+                    <span className="inline-block flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800"></span>
+                  </div>
+                  <p className="mt-1 truncate text-sm text-gray-500">
+                    Node is a JavaScript runtime environment used to develop
+                    server-side applications. It is an open source
+                    cross-platform environment that allows developers to write
+                    server-side code in JavaScript.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div className="-mt-px flex divide-x divide-gray-200">
+                  <div className="flex w-0 flex-1"></div>
+                  <div className="-ml-px flex w-0 flex-1"></div>
+                </div>
+              </div>
+            </li>
+            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+              HTML
+              <div className="flex w-full items-center justify-between space-x-6 p-6">
+                <div className="flex-1 truncate">
+                  <div className="flex items-center space-x-3">
+                    <h3 className="truncate text-sm font-medium text-gray-900"></h3>
+                    <span className="inline-block flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800"></span>
+                  </div>
+                  <p className="mt-1 truncate text-sm text-gray-500">
+                    HTML (HyperText Markup Language) is a markup language used
+                    to create webpages and web applications. It is written in
+                    plain text and uses tags to structure the content.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div className="-mt-px flex divide-x divide-gray-200">
+                  <div className="flex w-0 flex-1"></div>
+                  <div className="-ml-px flex w-0 flex-1"></div>
+                </div>
+              </div>
+            </li>
+            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+              Rust
+              <div className="flex w-full items-center justify-between space-x-6 p-6">
+                <div className="flex-1 truncate">
+                  <div className="flex items-center space-x-3">
+                    <h3 className="truncate text-sm font-medium text-gray-900"></h3>
+                    <span className="inline-block flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800"></span>
+                  </div>
+                  <p className="mt-1 truncate text-sm text-gray-500">
+                    Rust is a multi-paradigm programming language focused on
+                    safety, speed, and concurrency. It is syntactically similar
+                    to C++, but is designed to provide better memory safety
+                    while maintaining high performance.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div className="-mt-px flex divide-x divide-gray-200">
+                  <div className="flex w-0 flex-1"></div>
+                  <div className="-ml-px flex w-0 flex-1"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
 
           {/* Feature section */}
           {/* <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8"> */}
