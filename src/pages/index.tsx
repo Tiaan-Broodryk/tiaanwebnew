@@ -133,11 +133,11 @@ const Home: NextPage = () => {
                   <span className="text-indigo-600">Tiaan Broodryk</span>
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  I'm an software developer with a passion for creating
+                  I am an software developer with a passion for creating
                   innovative and effective solutions to complex problems. I
                   thrive on working with cutting-edge technologies and
                   collaborating with other like-minded individuals to explore
-                  and create new solutions. I'm highly motivated and strive to
+                  and create new solutions. I am highly motivated and strive to
                   constantly learn and improve my skills.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
@@ -181,7 +181,7 @@ const Home: NextPage = () => {
                     transform="translate(24 24)"
                     clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                   >
-                    <image
+                    <img
                       src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png"
                       alt=""
                     />
