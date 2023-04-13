@@ -181,7 +181,7 @@ const Home: NextPage = () => {
                     transform="translate(24 24)"
                     clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                   >
-                    <img
+                    <image
                       src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png"
                       alt=""
                     />
@@ -431,7 +431,7 @@ const Home: NextPage = () => {
                     <p>{`“${featuredTestimonial.body}”`}</p>
                   </blockquote>
                   <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-                    <img
+                    <image
                       className="h-10 w-10 flex-none rounded-full bg-gray-50"
                       src={featuredTestimonial.author.imageUrl}
                       alt=""
@@ -465,7 +465,7 @@ const Home: NextPage = () => {
                               <p>{`“${testimonial.body}”`}</p>
                             </blockquote>
                             <figcaption className="mt-6 flex items-center gap-x-4">
-                              <img
+                              <image
                                 className="h-10 w-10 rounded-full bg-gray-50"
                                 src={testimonial.author.imageUrl}
                                 alt=""
