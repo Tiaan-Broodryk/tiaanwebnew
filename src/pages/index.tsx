@@ -196,35 +196,22 @@ const Home: NextPage = () => {
             <div className="p-7 text-center text-3xl font-extrabold text-indigo-600">
               The Languages I Specialize In
             </div>
-            <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://www.itechart.com/media/images/logo-06.original.png"
-                alt="Rust"
-                width={190}
-                height={90}
-                background-color="white"
-              />
-              <img
-                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
-                src="https://blog.theodo.com/static/ba2166b279b234c4824d1c2fb299ced2/a79d3/ts_logo.png"
-                alt="type
-                script"
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/120px-React-icon.svg.png"
-                alt="react"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                alt="html"
-                width={158}
-                height={48}
-              />
+            <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl font-bold text-white shadow-md hover:bg-indigo-400">
+                Typescript.
+              </button>
+              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl  font-bold text-white shadow-md hover:bg-indigo-400">
+                React.
+              </button>
+              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl  font-bold text-white shadow-md hover:bg-indigo-400">
+                Node.
+              </button>
+              <button className="h-10 w-32 rounded-md bg-indigo-600 text-xl  font-bold text-white shadow-md hover:bg-indigo-400">
+                HTML.
+              </button>
+              <button className="h-10 w-32 rounded-md bg-indigo-600   text-xl font-bold text-white shadow-md hover:bg-indigo-400">
+                Rust.
+              </button>
             </div>
           </div>
 
