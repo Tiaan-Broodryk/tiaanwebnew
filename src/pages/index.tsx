@@ -26,16 +26,6 @@ const Home: NextPage = () => {
             className="flex items-center justify-between p-6 lg:px-8"
             aria-label="Global"
           >
-            <div className="flex lg:flex-1">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
-              </a>
-            </div>
             <div className="flex lg:hidden">
               {/* <button
               type="button"
@@ -65,24 +55,7 @@ const Home: NextPage = () => {
           {/* <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}> */}
           <div className="fixed inset-0 z-50" />
           {/* <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"> */}
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
-            {/* <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button> */}
-          </div>
+
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               {/* <div className="space-y-2 py-6">
@@ -96,14 +69,6 @@ const Home: NextPage = () => {
                     </a>
                   ))}
                 </div> */}
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
-              </div>
             </div>
           </div>
           {/* </Dialog.Panel> */}
@@ -114,7 +79,7 @@ const Home: NextPage = () => {
           {/* Hero section */}
           <div className="relative isolate pt-14">
             <svg
-              className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+              className="absolute inset-0 -z-10 h-full w-full stroke-gray-400 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
               aria-hidden="true"
             >
               <defs>
@@ -129,7 +94,7 @@ const Home: NextPage = () => {
                   <path d="M100 200V.5M.5 .5H200" fill="none" />
                 </pattern>
               </defs>
-              <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+              <svg x="50%" y={-1} className="overflow-visible fill-gray-500">
                 <path
                   d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                   strokeWidth={0}
@@ -147,7 +112,7 @@ const Home: NextPage = () => {
                 <div className="flex">
                   <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                     <span className="font-semibold text-indigo-600">
-                      We’re hiring
+                      We’re taking projects
                     </span>
                     <span
                       className="h-4 w-px bg-gray-900/10"
@@ -155,7 +120,7 @@ const Home: NextPage = () => {
                     />
                     <a href="#" className="flex items-center gap-x-1">
                       <span className="absolute inset-0" aria-hidden="true" />
-                      See open positions
+                      See project hiring
                       <ChevronRightIcon
                         className="-mr-2 h-5 w-5 text-gray-400"
                         aria-hidden="true"
@@ -164,26 +129,29 @@ const Home: NextPage = () => {
                   </div>
                 </div>
                 <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  A better way to ship your projects
+                  My name is{" "}
+                  <span className="text-indigo-600">Tiaan Broodryk</span>
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Esse id magna consectetur fugiat non dolor in ad laboris magna
-                  laborum ea consequat. Nisi irure aliquip nisi adipisicing
-                  veniam voluptate id. In veniam incididunt ex veniam
-                  adipisicing sit.
+                  I'm an software developer with a passion for creating
+                  innovative and effective solutions to complex problems. I
+                  thrive on working with cutting-edge technologies and
+                  collaborating with other like-minded individuals to explore
+                  and create new solutions. I'm highly motivated and strive to
+                  constantly learn and improve my skills.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    Get started
+                    Download my Resume
                   </a>
                   <a
                     href="#"
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
-                    Learn more <span aria-hidden="true">→</span>
+                    Email me <span aria-hidden="true">→</span>
                   </a>
                 </div>
               </div>
@@ -225,39 +193,35 @@ const Home: NextPage = () => {
 
           {/* Logo cloud */}
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            <div className="p-7 text-center text-3xl font-extrabold text-indigo-600">
+              The Languages I Specialize In
+            </div>
+            <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
               <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-400.svg"
-                alt="Transistor"
-                width={158}
-                height={48}
+                src="https://www.itechart.com/media/images/logo-06.original.png"
+                alt="Rust"
+                width={190}
+                height={90}
+                background-color="white"
+              />
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src="https://blog.theodo.com/static/ba2166b279b234c4824d1c2fb299ced2/a79d3/ts_logo.png"
+                alt="type
+                script"
               />
               <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-400.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-400.svg"
-                alt="Tuple"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/120px-React-icon.svg.png"
+                alt="react"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-400.svg"
-                alt="SavvyCal"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-400.svg"
-                alt="Statamic"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                alt="html"
                 width={158}
                 height={48}
               />
@@ -265,8 +229,8 @@ const Home: NextPage = () => {
           </div>
 
           {/* Feature section */}
-          <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
-            <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+          {/* <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8"> */}
+          {/* <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
                 <div className="lg:row-start-2 lg:max-w-md">
                   <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -287,8 +251,8 @@ const Home: NextPage = () => {
                   width={2432}
                   height={1442}
                 />
-                <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-                  {/* <dl className="max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
+                <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10"> */}
+          {/* <dl className="max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                   {primaryFeatures.map((feature) => (
                     <div key={feature.name} className="relative">
                       <dt className="ml-9 inline-block font-semibold text-white">
@@ -299,7 +263,7 @@ const Home: NextPage = () => {
                     </div>
                   ))}
                 </dl> */}
-                </div>
+          {/* </div>
               </div>
               <div
                 className="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu"
@@ -314,10 +278,10 @@ const Home: NextPage = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Feature section */}
-          <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+          {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">
                 Deploy faster
@@ -331,8 +295,8 @@ const Home: NextPage = () => {
                 at. In mi viverra elit nunc.
               </p>
             </div>
-            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-              {/* <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none"> */}
+          {/* <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {secondaryFeatures.map((feature) => (
                 <div key={feature.name} className="flex flex-col">
                   <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
@@ -350,18 +314,17 @@ const Home: NextPage = () => {
                 </div>
               ))}
             </dl> */}
-            </div>
-          </div>
+          {/* </div>
+          </div> */}
 
           {/* Newsletter section */}
           <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
             <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
               <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Get notified when we’re launching.
+                Get in touch
               </h2>
               <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-                Reprehenderit ad esse et non officia in nulla. Id proident
-                tempor incididunt nostrud nulla et culpa.
+                You can leave your email here and i will contact you.
               </p>
               <form className="mx-auto mt-10 flex max-w-md gap-x-4">
                 <label htmlFor="email-address" className="sr-only">
@@ -542,21 +505,13 @@ const Home: NextPage = () => {
           className="mt-32 bg-gray-900 sm:mt-56"
           aria-labelledby="footer-heading"
         >
-          <h2 id="footer-heading" className="sr-only">
-            Footer
-          </h2>
           <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-              <img
-                className="h-7"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Company name"
-              />
               <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
                     <h3 className="text-sm font-semibold leading-6 text-white">
-                      Solutions
+                      Projects
                     </h3>
                     {/* <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.solutions.map((item) => (
@@ -570,7 +525,7 @@ const Home: NextPage = () => {
                   </div>
                   <div className="mt-10 md:mt-0">
                     <h3 className="text-sm font-semibold leading-6 text-white">
-                      Support
+                      Contact Info
                     </h3>
                     {/* <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.support.map((item) => (
@@ -585,9 +540,6 @@ const Home: NextPage = () => {
                 </div>
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-sm font-semibold leading-6 text-white">
-                      Company
-                    </h3>
                     {/* <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.company.map((item) => (
                       <li key={item.name}>
@@ -599,9 +551,6 @@ const Home: NextPage = () => {
                   </ul> */}
                   </div>
                   <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm font-semibold leading-6 text-white">
-                      Legal
-                    </h3>
                     {/* <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.legal.map((item) => (
                       <li key={item.name}>
@@ -618,7 +567,7 @@ const Home: NextPage = () => {
             <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  Subscribe to our newsletter
+                  Subscribe to my newsletter
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-gray-300">
                   The latest news, articles, and resources, sent to your inbox
@@ -658,7 +607,7 @@ const Home: NextPage = () => {
               ))}
             </div> */}
               <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-                &copy; 2020 Your Company, Inc. All rights reserved.
+                &copy; 2023 Tiaan Broodryk, Inc. All rights reserved.
               </p>
             </div>
           </div>
