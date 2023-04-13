@@ -200,9 +200,9 @@ const Home: NextPage = () => {
 
           <ul
             role="list"
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-6 p-14 sm:grid-cols-2 lg:grid-cols-3"
           >
-            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+            <li className="col-span-1 max-w-xs divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
               Typescript
               <div className="flex w-full items-center justify-between space-x-6 p-6">
                 <div className="flex-1 truncate">
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </li>
-            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+            <li className="col-span-1 max-w-xs divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
               React
               <div className="flex w-full items-center justify-between space-x-6 p-6">
                 <div className="flex-1 truncate">
@@ -247,7 +247,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </li>
-            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+            <li className="col-span-1 max-w-xs divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
               Node
               <div className="flex w-full items-center justify-between space-x-6 p-6">
                 <div className="flex-1 truncate">
@@ -270,9 +270,9 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </li>
-            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+            <li className="col-span-1 max-w-xs divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
               HTML
-              <div className="flex w-full items-center justify-between space-x-6 p-6">
+              <div className="flex w-full items-center justify-between space-x-6 p-6 ">
                 <div className="flex-1 truncate">
                   <div className="flex items-center space-x-3">
                     <h3 className="truncate text-sm font-medium text-gray-900"></h3>
@@ -292,7 +292,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </li>
-            <li className="col-span-1 divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
+            <li className="col-span-1 max-w-xs divide-y divide-gray-200 rounded-lg bg-slate-100 p-5 shadow">
               Rust
               <div className="flex w-full items-center justify-between space-x-6 p-6">
                 <div className="flex-1 truncate">
