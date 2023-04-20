@@ -7,33 +7,6 @@ import Image from "next/image";
 
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
-const features = [
-  {
-    name: "Adventure-ready",
-    description:
-      "The Drawstring Canister is water and tear resistant with durable canvas construction. This bag holds up to the demands of daily use while keeping your snacks secure.",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-03.jpg",
-    imageAlt: "Printed photo of bag being tossed into the sky on top of grass.",
-  },
-  {
-    name: "Minimal and clean",
-    description:
-      "Everything you need, nothing you don't. This bag has the simple, contemporary design that enables you to tell everyone you know about how essentialism is the only rational way to live life.",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-01.jpg",
-    imageAlt: "Double stitched black canvas hook loop.",
-  },
-  {
-    name: "Organized",
-    description:
-      "Never lose your snacks again with our patent-pending snack stash pocket system. With dedicated pouches for each of your snacking needs, the Drawstring Canister unlocks new levels of efficiency and convenience.",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-02.jpg",
-    imageAlt: "Black canvas body with chrome zipper and key ring.",
-  },
-];
-
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
@@ -418,44 +391,65 @@ const Home: NextPage = () => {
           {/* </div>
           </div> */}
 
-          <div className="bg-white">
-            <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
-              <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
-                <div className="max-w-3xl">
-                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Projects i have been part in
+          {/* <div className="bg-gray-50">
+            <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+              {/* Details section */}
+          {/* <section aria-labelledby="details-heading">
+                <div className="flex flex-col items-center text-center">
+                  <h2
+                    id="details-heading"
+                    className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                  >
+                    The Fine Details
+                  </h2>
+                  <p className="mt-3 max-w-3xl text-lg text-gray-600">
+                    Our patented padded snack sleeve construction protects your
+                    favorite treats from getting smooshed during all-day
+                    adventures, long shifts at work, and tough travel schedules.
                   </p>
                 </div>
 
-                <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-                  {features.map((feature) => (
-                    <div
-                      key={feature.name}
-                      className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8"
-                    >
-                      <div className="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
-                        <h3 className="text-lg font-medium text-gray-900">
-                          {feature.name}
-                        </h3>
-                        <p className="mt-2 text-sm text-gray-500">
-                          {feature.description}
-                        </p>
-                      </div>
-                      <div className="flex-auto lg:col-span-7 xl:col-span-8">
-                        <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
-                          <Image
-                            src={feature.imageSrc}
-                            alt={feature.imageAlt}
-                            className="object-cover object-center"
-                          />
-                        </div>
-                      </div>
+                <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
+                  <div>
+                    <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg">
+                      <img
+                        src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg"
+                        alt="Drawstring top with elastic loop closure and textured interior padding."
+                        className="h-full w-full object-cover object-center"
+                      />
                     </div>
-                  ))}
+                    <p className="mt-8 text-base text-gray-500">
+                      The 20L model has enough space for 370 candy bars, 6
+                      cylinders of chips, 1220 standard gumballs, or any
+                      combination of on-the-go treats that your heart desires.
+                      Yes, we did the math.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg">
+                      <img
+                        src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-02.jpg"
+                        alt="Front zipper pouch with included key ring."
+                        className="h-full w-full object-cover object-center"
+                      />
+                      <Image
+                        src="/public/assets/images/surrealreact.jpg"
+                        width={800 * 4}
+                        height={600 * 4}
+                        alt={""}
+                        className="absolute inset-0 -z-10 h-full w-full object-cover"
+                      />
+                    </div>
+                    <p className="mt-8 text-base text-gray-500">
+                      Up your snack organization game with multiple compartment
+                      options. The quick-access stash pouch is ready for even
+                      the most unexpected snack attacks and sharing needs.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </section>
             </div>
-          </div>
+          </div> */}
 
           {/* Newsletter section */}
           <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
