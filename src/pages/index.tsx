@@ -1,13 +1,38 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
+
 import { signIn, signOut, useSession } from "next-auth/react";
-
 import { api } from "~/utils/api";
-
-import { Dialog } from "@headlessui/react";
+import Image from "next/image";
 
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+
+const features = [
+  {
+    name: "Adventure-ready",
+    description:
+      "The Drawstring Canister is water and tear resistant with durable canvas construction. This bag holds up to the demands of daily use while keeping your snacks secure.",
+    imageSrc:
+      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-03.jpg",
+    imageAlt: "Printed photo of bag being tossed into the sky on top of grass.",
+  },
+  {
+    name: "Minimal and clean",
+    description:
+      "Everything you need, nothing you don't. This bag has the simple, contemporary design that enables you to tell everyone you know about how essentialism is the only rational way to live life.",
+    imageSrc:
+      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-01.jpg",
+    imageAlt: "Double stitched black canvas hook loop.",
+  },
+  {
+    name: "Organized",
+    description:
+      "Never lose your snacks again with our patent-pending snack stash pocket system. With dedicated pouches for each of your snacking needs, the Drawstring Canister unlocks new levels of efficiency and convenience.",
+    imageSrc:
+      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-02.jpg",
+    imageAlt: "Black canvas body with chrome zipper and key ring.",
+  },
+];
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -94,7 +119,7 @@ const Home: NextPage = () => {
                   <path d="M100 200V.5M.5 .5H200" fill="none" />
                 </pattern>
               </defs>
-              <svg x="50%" y={-1} className="overflow-visible fill-gray-500">
+              <svg x="50%" y={-1} className="overflow-visible fill-gray-300">
                 <path
                   d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                   strokeWidth={0}
@@ -140,20 +165,7 @@ const Home: NextPage = () => {
                   and create new solutions. I am highly motivated and strive to
                   constantly learn and improve my skills.
                 </p>
-                <div className="mt-10 flex items-center gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Download my Resume
-                  </a>
-                  <a
-                    href="#"
-                    className="text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    Email me <span aria-hidden="true">→</span>
-                  </a>
-                </div>
+                <div className="mt-10 flex items-center gap-x-6"></div>
               </div>
               <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                 <svg
@@ -406,6 +418,45 @@ const Home: NextPage = () => {
           {/* </div>
           </div> */}
 
+          <div className="bg-white">
+            <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
+              <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
+                <div className="max-w-3xl">
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    Projects i have been part in
+                  </p>
+                </div>
+
+                <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+                  {features.map((feature) => (
+                    <div
+                      key={feature.name}
+                      className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8"
+                    >
+                      <div className="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {feature.name}
+                        </h3>
+                        <p className="mt-2 text-sm text-gray-500">
+                          {feature.description}
+                        </p>
+                      </div>
+                      <div className="flex-auto lg:col-span-7 xl:col-span-8">
+                        <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
+                          <Image
+                            src={feature.imageSrc}
+                            alt={feature.imageAlt}
+                            className="object-cover object-center"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Newsletter section */}
           <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
             <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
@@ -599,9 +650,6 @@ const Home: NextPage = () => {
               <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-sm font-semibold leading-6 text-white">
-                      Projects
-                    </h3>
                     {/* <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.solutions.map((item) => (
                       <li key={item.name}>
@@ -613,9 +661,6 @@ const Home: NextPage = () => {
                   </ul> */}
                   </div>
                   <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm font-semibold leading-6 text-white">
-                      Contact Info
-                    </h3>
                     {/* <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.support.map((item) => (
                       <li key={item.name}>
