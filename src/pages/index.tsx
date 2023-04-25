@@ -244,7 +244,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="p-20"></div>
-          <div className=" border-t border-white/10 bg-gray-800  pt-10">
+          <div className=" border-t border-white/10 bg-gray-800  pb-6 pt-10">
             <p className="text-xs leading-5 text-white">
               &copy; 2023 Tiaan Broodryk, Inc. All rights reserved.
             </p>
